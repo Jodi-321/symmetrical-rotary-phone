@@ -18,6 +18,18 @@
 		84214F562C80174500DCEDBD /* journalAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F552C80174500DCEDBD /* journalAppUITestsLaunchTests.swift */; };
 		84B764772C8152E800F07B16 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 84B764762C8152E800F07B16 /* Swinject */; };
 		84B764792C8152E800F07B16 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 84B764782C8152E800F07B16 /* Swinject-Dynamic */; };
+		84B764932C815C3600F07B16 /* AnalyticsManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7648C2C815C3600F07B16 /* AnalyticsManagerProtocol.swift */; };
+		84B764942C815C3600F07B16 /* MoodTrackingManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7648D2C815C3600F07B16 /* MoodTrackingManagerProtocol.swift */; };
+		84B764952C815C3600F07B16 /* AuthenticationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7648E2C815C3600F07B16 /* AuthenticationManagerProtocol.swift */; };
+		84B764962C815C3600F07B16 /* BackupManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7648F2C815C3600F07B16 /* BackupManagerProtocol.swift */; };
+		84B764972C815C3600F07B16 /* KeychainManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B764902C815C3600F07B16 /* KeychainManagerProtocol.swift */; };
+		84B764982C815C3600F07B16 /* JournalManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B764912C815C3600F07B16 /* JournalManagerProtocol.swift */; };
+		84B764992C815C3600F07B16 /* SecurityManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B764922C815C3600F07B16 /* SecurityManagerProtocol.swift */; };
+		84B7649B2C815C4900F07B16 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7649A2C815C4900F07B16 /* DIContainer.swift */; };
+		84B764A02C815C5B00F07B16 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7649C2C815C5B00F07B16 /* KeychainManager.swift */; };
+		84B764A12C815C5B00F07B16 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7649D2C815C5B00F07B16 /* SecurityManager.swift */; };
+		84B764A22C815C5B00F07B16 /* JournalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7649E2C815C5B00F07B16 /* JournalManager.swift */; };
+		84B764A32C815C5B00F07B16 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B7649F2C815C5B00F07B16 /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +70,18 @@
 		84B764742C814CEC00F07B16 /* Services */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Services; path = ../../../../Services; sourceTree = "<group>"; };
 		84B7647A2C81530F00F07B16 /* DI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DI; path = ../../../../DI; sourceTree = "<group>"; };
 		84B7647E2C81594100F07B16 /* Views */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Views; path = ../../../../Views; sourceTree = "<group>"; };
+		84B7648C2C815C3600F07B16 /* AnalyticsManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyticsManagerProtocol.swift; path = ../../../../../../Protocols/AnalyticsManagerProtocol.swift; sourceTree = "<group>"; };
+		84B7648D2C815C3600F07B16 /* MoodTrackingManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodTrackingManagerProtocol.swift; path = ../../../../../../Protocols/MoodTrackingManagerProtocol.swift; sourceTree = "<group>"; };
+		84B7648E2C815C3600F07B16 /* AuthenticationManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationManagerProtocol.swift; path = ../../../../../../Protocols/AuthenticationManagerProtocol.swift; sourceTree = "<group>"; };
+		84B7648F2C815C3600F07B16 /* BackupManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackupManagerProtocol.swift; path = ../../../../../../Protocols/BackupManagerProtocol.swift; sourceTree = "<group>"; };
+		84B764902C815C3600F07B16 /* KeychainManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainManagerProtocol.swift; path = ../../../../../../Protocols/KeychainManagerProtocol.swift; sourceTree = "<group>"; };
+		84B764912C815C3600F07B16 /* JournalManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalManagerProtocol.swift; path = ../../../../../../Protocols/JournalManagerProtocol.swift; sourceTree = "<group>"; };
+		84B764922C815C3600F07B16 /* SecurityManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecurityManagerProtocol.swift; path = ../../../../../../Protocols/SecurityManagerProtocol.swift; sourceTree = "<group>"; };
+		84B7649A2C815C4900F07B16 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DIContainer.swift; path = ../../../../../../DI/DIContainer.swift; sourceTree = "<group>"; };
+		84B7649C2C815C5B00F07B16 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainManager.swift; path = ../../../../../../Services/KeychainManager.swift; sourceTree = "<group>"; };
+		84B7649D2C815C5B00F07B16 /* SecurityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecurityManager.swift; path = ../../../../../../Services/SecurityManager.swift; sourceTree = "<group>"; };
+		84B7649E2C815C5B00F07B16 /* JournalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JournalManager.swift; path = ../../../../../../Services/JournalManager.swift; sourceTree = "<group>"; };
+		84B7649F2C815C5B00F07B16 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationManager.swift; path = ../../../../../../Services/AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +134,8 @@
 		84214F322C80174400DCEDBD /* journalApp */ = {
 			isa = PBXGroup;
 			children = (
+				84B764892C815BE800F07B16 /* Tests */,
+				84B764802C815B7B00F07B16 /* Sources */,
 				84B7647E2C81594100F07B16 /* Views */,
 				84B7647A2C81530F00F07B16 /* DI */,
 				84B764742C814CEC00F07B16 /* Services */,
@@ -151,6 +177,112 @@
 				84214F552C80174500DCEDBD /* journalAppUITestsLaunchTests.swift */,
 			);
 			path = journalAppUITests;
+			sourceTree = "<group>";
+		};
+		84B764802C815B7B00F07B16 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84B764882C815BCF00F07B16 /* DI */,
+				84B764872C815BC500F07B16 /* Utils */,
+				84B764862C815BBB00F07B16 /* Data */,
+				84B764852C815BB100F07B16 /* Models */,
+				84B764842C815BA300F07B16 /* Protocols */,
+				84B764832C815B9800F07B16 /* Services */,
+				84B764822C815B9000F07B16 /* UI */,
+				84B764812C815B8700F07B16 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		84B764812C815B8700F07B16 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84B764822C815B9000F07B16 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84B7648B2C815C0000F07B16 /* ViewModels */,
+				84B7648A2C815BF500F07B16 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84B764832C815B9800F07B16 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84B7649F2C815C5B00F07B16 /* AuthenticationManager.swift */,
+				84B7649E2C815C5B00F07B16 /* JournalManager.swift */,
+				84B7649C2C815C5B00F07B16 /* KeychainManager.swift */,
+				84B7649D2C815C5B00F07B16 /* SecurityManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84B764842C815BA300F07B16 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				84B7648C2C815C3600F07B16 /* AnalyticsManagerProtocol.swift */,
+				84B7648E2C815C3600F07B16 /* AuthenticationManagerProtocol.swift */,
+				84B7648F2C815C3600F07B16 /* BackupManagerProtocol.swift */,
+				84B764912C815C3600F07B16 /* JournalManagerProtocol.swift */,
+				84B764902C815C3600F07B16 /* KeychainManagerProtocol.swift */,
+				84B7648D2C815C3600F07B16 /* MoodTrackingManagerProtocol.swift */,
+				84B764922C815C3600F07B16 /* SecurityManagerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		84B764852C815BB100F07B16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84B764862C815BBB00F07B16 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		84B764872C815BC500F07B16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84B764882C815BCF00F07B16 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				84B7649A2C815C4900F07B16 /* DIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		84B764892C815BE800F07B16 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		84B7648A2C815BF500F07B16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84B7648B2C815C0000F07B16 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +444,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B764A02C815C5B00F07B16 /* KeychainManager.swift in Sources */,
+				84B764A32C815C5B00F07B16 /* AuthenticationManager.swift in Sources */,
 				84214F3D2C80174500DCEDBD /* Persistence.swift in Sources */,
+				84B764962C815C3600F07B16 /* BackupManagerProtocol.swift in Sources */,
 				84214F362C80174400DCEDBD /* ContentView.swift in Sources */,
+				84B764982C815C3600F07B16 /* JournalManagerProtocol.swift in Sources */,
+				84B764A22C815C5B00F07B16 /* JournalManager.swift in Sources */,
+				84B7649B2C815C4900F07B16 /* DIContainer.swift in Sources */,
 				84214F342C80174400DCEDBD /* journalAppApp.swift in Sources */,
+				84B764942C815C3600F07B16 /* MoodTrackingManagerProtocol.swift in Sources */,
+				84B764992C815C3600F07B16 /* SecurityManagerProtocol.swift in Sources */,
+				84B764932C815C3600F07B16 /* AnalyticsManagerProtocol.swift in Sources */,
+				84B764952C815C3600F07B16 /* AuthenticationManagerProtocol.swift in Sources */,
+				84B764972C815C3600F07B16 /* KeychainManagerProtocol.swift in Sources */,
 				84214F402C80174500DCEDBD /* journalApp.xcdatamodeld in Sources */,
+				84B764A12C815C5B00F07B16 /* SecurityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
