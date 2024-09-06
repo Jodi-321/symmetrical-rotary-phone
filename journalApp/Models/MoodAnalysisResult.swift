@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct MoodAnalysisResult {
+    let averageMood: Int
+    let moodCounts: [Int: Int] //dictionary with mood ratings as keys and counts as values
+}

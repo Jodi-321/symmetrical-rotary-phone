@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AuthenticationManagerProtocol {
-    func authenticationUser(pin:String) -> Bool
-    func changePIN(newPin:String) -> Bool
+    func authenticateUser(pin: String) -> Bool
+    func changePIN(newPin: String) -> Bool
     func logoutUser()
 }

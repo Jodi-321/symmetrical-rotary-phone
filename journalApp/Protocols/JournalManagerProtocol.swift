@@ -7,9 +7,9 @@
 
 import Foundation
 
-Protocol JournalManagerProtocol {
-    func createEntry(content: String, moodRating: Int) -> Result<JournalEntry, JournalError>
+protocol JournalManagerProtocol {
+    func createEntry(content: String, moodRating: Int, metadata: [String: Any]?) -> Result<JournalEntry, JournalError>
     func fetchEntries() -> [JournalEntry]
-    func updateEntry(entry: JournalEntry) -> Result<Bool, JournalError>
-    func deleteEntry(entry: JournalEntry) -> Result<Bool, JOurnalError>
+    func updateEntry(entry: JournalEntry, updatedContent: String, updatedMoodRating: Int, updatedMetadata: [String: Any]?) -> Result<Bool, JournalError>
+    func deleteEntry(entry: JournalEntry) -> Result<Bool, JournalError>
 }

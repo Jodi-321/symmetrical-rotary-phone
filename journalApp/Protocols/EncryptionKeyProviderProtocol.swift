@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol EncryptionKeyProviderProtocol {
+    func provideEncryptionKey() throws -> Data
+}
