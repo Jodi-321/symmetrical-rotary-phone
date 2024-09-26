@@ -8,6 +8,6 @@
 import Foundation
 
 protocol AnalyticsManagerProtocol {
-    func logEvent(name: String, parameters: [String: Any]?)
-    func setUserProperty(_ property: String, forName name: String)
+    //func logEvent(name: String, parameters: [String: Any]?)
+    //func setUserProperty(_ property: String, forName name: String)
 }

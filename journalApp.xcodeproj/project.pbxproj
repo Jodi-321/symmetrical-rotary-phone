@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		84214F342C80174400DCEDBD /* journalAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F332C80174400DCEDBD /* journalAppApp.swift */; };
-		84214F362C80174400DCEDBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F352C80174400DCEDBD /* ContentView.swift */; };
 		84214F382C80174500DCEDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84214F372C80174500DCEDBD /* Assets.xcassets */; };
 		84214F3B2C80174500DCEDBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84214F3A2C80174500DCEDBD /* Preview Assets.xcassets */; };
 		84214F3D2C80174500DCEDBD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F3C2C80174500DCEDBD /* Persistence.swift */; };
-		84214F402C80174500DCEDBD /* journalApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84214F3E2C80174500DCEDBD /* journalApp.xcdatamodeld */; };
 		84214F4A2C80174500DCEDBD /* journalAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F492C80174500DCEDBD /* journalAppTests.swift */; };
 		84214F542C80174500DCEDBD /* journalAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F532C80174500DCEDBD /* journalAppUITests.swift */; };
 		84214F562C80174500DCEDBD /* journalAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84214F552C80174500DCEDBD /* journalAppUITestsLaunchTests.swift */; };
@@ -35,15 +33,18 @@
 		84298F3E2C82264000C5CEF9 /* MoodTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84298F3D2C82264000C5CEF9 /* MoodTrackingManager.swift */; };
 		84298F402C8237BA00C5CEF9 /* EncryptionKeyProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84298F3F2C8237BA00C5CEF9 /* EncryptionKeyProviderProtocol.swift */; };
 		84298F422C82380F00C5CEF9 /* EncryptionKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84298F412C82380F00C5CEF9 /* EncryptionKeyProvider.swift */; };
-		8484DAE92C890D9E0010E637 /* MetadataKeyRegistry_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484DAE82C890D9E0010E637 /* MetadataKeyRegistry_old.swift */; };
-		8484DAEB2C890DAA0010E637 /* MetadataValidator_old.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484DAEA2C890DAA0010E637 /* MetadataValidator_old.swift */; };
+		844805882C8B8E9F0010872B /* JournalEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844805862C8B8E9F0010872B /* JournalEntry+CoreDataClass.swift */; };
+		844805892C8B8E9F0010872B /* JournalEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844805872C8B8E9F0010872B /* JournalEntry+CoreDataProperties.swift */; };
+		8448058B2C8B9E010010872B /* MetadataValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448058A2C8B9E010010872B /* MetadataValueTransformer.swift */; };
+		8448058D2C8B9EDE0010872B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448058C2C8B9EDE0010872B /* AppDelegate.swift */; };
+		847A30342C92404200DBB25C /* DataMigrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A30332C92404200DBB25C /* DataMigrationManager.swift */; };
+		847CB5BE2CA5CCC800C3C92C /* EncryptionDebugHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CB5BD2CA5CCC800C3C92C /* EncryptionDebugHelper.swift */; };
 		8484DAED2C890DDC0010E637 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484DAEC2C890DDC0010E637 /* ValidationError.swift */; };
 		8488C52C2C82540600ADB11B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488C52B2C82540600ADB11B /* CoreDataManager.swift */; };
 		8488C52E2C825BB600ADB11B /* JournalEntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488C52D2C825BB600ADB11B /* JournalEntryData.swift */; };
 		849A1C742C89346B00F4BB81 /* MetadataValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A1C722C8926C500F4BB81 /* MetadataValidatorTests.swift */; };
 		849A1C752C89347100F4BB81 /* MetadataKeyRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A1C702C89239D00F4BB81 /* MetadataKeyRegistryTests.swift */; };
 		849A1C762C89347400F4BB81 /* JournalEntryValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A1C6E2C891A6100F4BB81 /* JournalEntryValidationTests.swift */; };
-		84A21EF12C82513100274287 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A21EF02C82513100274287 /* JournalEntry.swift */; };
 		84C04AF02C8A522300225B58 /* MetadataKeyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AEF2C8A522300225B58 /* MetadataKeyRegistry.swift */; };
 		84C04AF22C8A523100225B58 /* MetadataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AF12C8A523100225B58 /* MetadataValidator.swift */; };
 		84C04AF52C8A5FA300225B58 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AF42C8A5FA300225B58 /* Validatable.swift */; };
@@ -51,11 +52,17 @@
 		84C04AF92C8A628F00225B58 /* MetadataValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AF82C8A628F00225B58 /* MetadataValidatable.swift */; };
 		84C04AFE2C8A761F00225B58 /* JournalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AFD2C8A761F00225B58 /* JournalRepository.swift */; };
 		84C04B002C8A76A500225B58 /* CoreDataJournalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AFF2C8A76A500225B58 /* CoreDataJournalRepository.swift */; };
-		84EAF68E2C824B1A0051A649 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84EAF68D2C824B1A0051A649 /* CryptoSwift */; };
 		84EAF6962C824BE80051A649 /* JournalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAF6952C824BE80051A649 /* JournalError.swift */; };
 		84EAF6982C824DFF0051A649 /* BackupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAF6972C824DFF0051A649 /* BackupError.swift */; };
-		84EC7D942C87CADB00C50E01 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 84EC7D932C87CADB00C50E01 /* Swinject */; };
 		84EF3EA62C8251EE00803076 /* MoodAnalysisResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF3EA52C8251EE00803076 /* MoodAnalysisResult.swift */; };
+		84F658CB2C8AAF7D00671EB1 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 84F658CA2C8AAF7D00671EB1 /* Swinject */; };
+		84F658CD2C8AAF8A00671EB1 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84F658CC2C8AAF8A00671EB1 /* CryptoSwift */; };
+		84FED7852C8CEF060078A6CE /* JournalEntry+CustomMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FED7842C8CEF060078A6CE /* JournalEntry+CustomMethods.swift */; };
+		84FED7862C8CF5C70078A6CE /* JournalAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 846B60D72C8B86AE00C2C710 /* JournalAppModel.xcdatamodeld */; };
+		84FED7882C8CF78D0078A6CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FED7872C8CF78D0078A6CE /* ContentView.swift */; };
+		84FED78A2C8CFD2B0078A6CE /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FED7892C8CFD2B0078A6CE /* AddEntryView.swift */; };
+		84FED78C2C8D01E90078A6CE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FED78B2C8D01E90078A6CE /* CoreDataStack.swift */; };
+		84FED78E2C8D1F910078A6CE /* FetchedResultsControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FED78D2C8D1F910078A6CE /* FetchedResultsControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,11 +98,9 @@
 /* Begin PBXFileReference section */
 		84214F302C80174400DCEDBD /* journalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = journalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84214F332C80174400DCEDBD /* journalAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalAppApp.swift; sourceTree = "<group>"; };
-		84214F352C80174400DCEDBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84214F372C80174500DCEDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84214F3A2C80174500DCEDBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84214F3C2C80174500DCEDBD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		84214F3F2C80174500DCEDBD /* journalApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = journalApp.xcdatamodel; sourceTree = "<group>"; };
 		84214F452C80174500DCEDBD /* journalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = journalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84214F492C80174500DCEDBD /* journalAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalAppTests.swift; sourceTree = "<group>"; };
 		84214F4F2C80174500DCEDBD /* journalAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = journalAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,15 +127,19 @@
 		84298F3D2C82264000C5CEF9 /* MoodTrackingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodTrackingManager.swift; sourceTree = "<group>"; };
 		84298F3F2C8237BA00C5CEF9 /* EncryptionKeyProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionKeyProviderProtocol.swift; sourceTree = "<group>"; };
 		84298F412C82380F00C5CEF9 /* EncryptionKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionKeyProvider.swift; sourceTree = "<group>"; };
-		8484DAE82C890D9E0010E637 /* MetadataKeyRegistry_old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataKeyRegistry_old.swift; sourceTree = "<group>"; };
-		8484DAEA2C890DAA0010E637 /* MetadataValidator_old.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataValidator_old.swift; sourceTree = "<group>"; };
+		844805862C8B8E9F0010872B /* JournalEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		844805872C8B8E9F0010872B /* JournalEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8448058A2C8B9E010010872B /* MetadataValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataValueTransformer.swift; sourceTree = "<group>"; };
+		8448058C2C8B9EDE0010872B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846B60D82C8B86AE00C2C710 /* JournalAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalAppModel.xcdatamodel; sourceTree = "<group>"; };
+		847A30332C92404200DBB25C /* DataMigrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMigrationManager.swift; sourceTree = "<group>"; };
+		847CB5BD2CA5CCC800C3C92C /* EncryptionDebugHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionDebugHelper.swift; sourceTree = "<group>"; };
 		8484DAEC2C890DDC0010E637 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		8488C52B2C82540600ADB11B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		8488C52D2C825BB600ADB11B /* JournalEntryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryData.swift; sourceTree = "<group>"; };
 		849A1C6E2C891A6100F4BB81 /* JournalEntryValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryValidationTests.swift; sourceTree = "<group>"; };
 		849A1C702C89239D00F4BB81 /* MetadataKeyRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataKeyRegistryTests.swift; sourceTree = "<group>"; };
 		849A1C722C8926C500F4BB81 /* MetadataValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataValidatorTests.swift; sourceTree = "<group>"; };
-		84A21EF02C82513100274287 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		84B764712C81474C00F07B16 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Sources; path = ../../../../Sources; sourceTree = "<group>"; };
 		84B7648C2C815C3600F07B16 /* AnalyticsManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyticsManagerProtocol.swift; path = ../../../../../../Protocols/AnalyticsManagerProtocol.swift; sourceTree = "<group>"; };
 		84B7648D2C815C3600F07B16 /* MoodTrackingManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodTrackingManagerProtocol.swift; path = ../../../../../../Protocols/MoodTrackingManagerProtocol.swift; sourceTree = "<group>"; };
@@ -154,6 +163,12 @@
 		84EAF6952C824BE80051A649 /* JournalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalError.swift; sourceTree = "<group>"; };
 		84EAF6972C824DFF0051A649 /* BackupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupError.swift; sourceTree = "<group>"; };
 		84EF3EA52C8251EE00803076 /* MoodAnalysisResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodAnalysisResult.swift; sourceTree = "<group>"; };
+		84FED7832C8CEB3D0078A6CE /* JournalAppModelV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JournalAppModelV2.xcdatamodel; sourceTree = "<group>"; };
+		84FED7842C8CEF060078A6CE /* JournalEntry+CustomMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CustomMethods.swift"; sourceTree = "<group>"; };
+		84FED7872C8CF78D0078A6CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84FED7892C8CFD2B0078A6CE /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+		84FED78B2C8D01E90078A6CE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		84FED78D2C8D1F910078A6CE /* FetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +176,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EAF68E2C824B1A0051A649 /* CryptoSwift in Frameworks */,
-				84EC7D942C87CADB00C50E01 /* Swinject in Frameworks */,
+				84F658CB2C8AAF7D00671EB1 /* Swinject in Frameworks */,
+				84F658CD2C8AAF8A00671EB1 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,11 +236,10 @@
 				84214F642C80232800DCEDBD /* journalApp.entitlements */,
 				84214F632C80226400DCEDBD /* Info.plist */,
 				84214F332C80174400DCEDBD /* journalAppApp.swift */,
-				84214F352C80174400DCEDBD /* ContentView.swift */,
 				84214F372C80174500DCEDBD /* Assets.xcassets */,
 				84214F3C2C80174500DCEDBD /* Persistence.swift */,
-				84214F3E2C80174500DCEDBD /* journalApp.xcdatamodeld */,
 				84214F392C80174500DCEDBD /* Preview Content */,
+				8448058C2C8B9EDE0010872B /* AppDelegate.swift */,
 			);
 			path = journalApp;
 			sourceTree = "<group>";
@@ -286,6 +300,7 @@
 				84298F3B2C8223B300C5CEF9 /* BackupManager.swift */,
 				84298F3D2C82264000C5CEF9 /* MoodTrackingManager.swift */,
 				84298F412C82380F00C5CEF9 /* EncryptionKeyProvider.swift */,
+				847CB5BD2CA5CCC800C3C92C /* EncryptionDebugHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -309,6 +324,8 @@
 		84298F2F2C820E2600C5CEF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84FED7872C8CF78D0078A6CE /* ContentView.swift */,
+				84FED7892C8CFD2B0078A6CE /* AddEntryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,10 +345,7 @@
 			children = (
 				84EAF6952C824BE80051A649 /* JournalError.swift */,
 				84EAF6972C824DFF0051A649 /* BackupError.swift */,
-				84A21EF02C82513100274287 /* JournalEntry.swift */,
 				84EF3EA52C8251EE00803076 /* MoodAnalysisResult.swift */,
-				8484DAE82C890D9E0010E637 /* MetadataKeyRegistry_old.swift */,
-				8484DAEA2C890DAA0010E637 /* MetadataValidator_old.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,8 +353,15 @@
 		84298F322C820E4700C5CEF9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				844805862C8B8E9F0010872B /* JournalEntry+CoreDataClass.swift */,
+				844805872C8B8E9F0010872B /* JournalEntry+CoreDataProperties.swift */,
 				8488C52B2C82540600ADB11B /* CoreDataManager.swift */,
 				8488C52D2C825BB600ADB11B /* JournalEntryData.swift */,
+				846B60D72C8B86AE00C2C710 /* JournalAppModel.xcdatamodeld */,
+				84FED7842C8CEF060078A6CE /* JournalEntry+CustomMethods.swift */,
+				84FED78B2C8D01E90078A6CE /* CoreDataStack.swift */,
+				84FED78D2C8D1F910078A6CE /* FetchedResultsControllerDelegate.swift */,
+				847A30332C92404200DBB25C /* DataMigrationManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -349,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				8484DAEC2C890DDC0010E637 /* ValidationError.swift */,
+				8448058A2C8B9E010010872B /* MetadataValueTransformer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -520,8 +542,8 @@
 			);
 			name = journalApp;
 			packageProductDependencies = (
-				84EAF68D2C824B1A0051A649 /* CryptoSwift */,
-				84EC7D932C87CADB00C50E01 /* Swinject */,
+				84F658CA2C8AAF7D00671EB1 /* Swinject */,
+				84F658CC2C8AAF8A00671EB1 /* CryptoSwift */,
 			);
 			productName = journalApp;
 			productReference = 84214F302C80174400DCEDBD /* journalApp.app */;
@@ -641,12 +663,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847CB5BE2CA5CCC800C3C92C /* EncryptionDebugHelper.swift in Sources */,
+				8448058B2C8B9E010010872B /* MetadataValueTransformer.swift in Sources */,
+				84FED7862C8CF5C70078A6CE /* JournalAppModel.xcdatamodeld in Sources */,
 				84298F2D2C820E0400C5CEF9 /* DIContainer.swift in Sources */,
+				8448058D2C8B9EDE0010872B /* AppDelegate.swift in Sources */,
 				84298F212C820DB800C5CEF9 /* SecurityManagerProtocol.swift in Sources */,
+				844805882C8B8E9F0010872B /* JournalEntry+CoreDataClass.swift in Sources */,
+				844805892C8B8E9F0010872B /* JournalEntry+CoreDataProperties.swift in Sources */,
 				84C04B002C8A76A500225B58 /* CoreDataJournalRepository.swift in Sources */,
 				84C04AFE2C8A761F00225B58 /* JournalRepository.swift in Sources */,
+				84FED78E2C8D1F910078A6CE /* FetchedResultsControllerDelegate.swift in Sources */,
+				84FED78A2C8CFD2B0078A6CE /* AddEntryView.swift in Sources */,
 				84EAF6962C824BE80051A649 /* JournalError.swift in Sources */,
 				84298F1D2C820DB800C5CEF9 /* BackupManagerProtocol.swift in Sources */,
+				847A30342C92404200DBB25C /* DataMigrationManager.swift in Sources */,
 				84C04AF02C8A522300225B58 /* MetadataKeyRegistry.swift in Sources */,
 				84298F1E2C820DB800C5CEF9 /* JournalManagerProtocol.swift in Sources */,
 				8484DAED2C890DDC0010E637 /* ValidationError.swift in Sources */,
@@ -655,7 +686,6 @@
 				84298F352C8211C700C5CEF9 /* JournalEntryViewModel.swift in Sources */,
 				8488C52E2C825BB600ADB11B /* JournalEntryData.swift in Sources */,
 				84214F3D2C80174500DCEDBD /* Persistence.swift in Sources */,
-				84214F362C80174400DCEDBD /* ContentView.swift in Sources */,
 				84EF3EA62C8251EE00803076 /* MoodAnalysisResult.swift in Sources */,
 				84298F272C820DE100C5CEF9 /* AuthenticationManager.swift in Sources */,
 				84298F292C820DE100C5CEF9 /* KeychainManager.swift in Sources */,
@@ -663,19 +693,18 @@
 				84298F3E2C82264000C5CEF9 /* MoodTrackingManager.swift in Sources */,
 				84C04AF72C8A622800225B58 /* Persistable.swift in Sources */,
 				84EAF6982C824DFF0051A649 /* BackupError.swift in Sources */,
+				84FED7852C8CEF060078A6CE /* JournalEntry+CustomMethods.swift in Sources */,
+				84FED7882C8CF78D0078A6CE /* ContentView.swift in Sources */,
 				84298F1C2C820DB800C5CEF9 /* AuthenticationManagerProtocol.swift in Sources */,
+				84FED78C2C8D01E90078A6CE /* CoreDataStack.swift in Sources */,
 				84C04AF52C8A5FA300225B58 /* Validatable.swift in Sources */,
 				84298F202C820DB800C5CEF9 /* MoodTrackingManagerProtocol.swift in Sources */,
 				84298F382C8212ED00C5CEF9 /* JournalEntryViewController.swift in Sources */,
 				84298F282C820DE100C5CEF9 /* JournalManager.swift in Sources */,
-				8484DAEB2C890DAA0010E637 /* MetadataValidator_old.swift in Sources */,
-				84214F402C80174500DCEDBD /* journalApp.xcdatamodeld in Sources */,
 				84298F3A2C8222FB00C5CEF9 /* AnalyticsManager.swift in Sources */,
 				84298F1B2C820DB800C5CEF9 /* AnalyticsManagerProtocol.swift in Sources */,
 				84298F422C82380F00C5CEF9 /* EncryptionKeyProvider.swift in Sources */,
-				8484DAE92C890D9E0010E637 /* MetadataKeyRegistry_old.swift in Sources */,
 				84298F402C8237BA00C5CEF9 /* EncryptionKeyProviderProtocol.swift in Sources */,
-				84A21EF12C82513100274287 /* JournalEntry.swift in Sources */,
 				8488C52C2C82540600ADB11B /* CoreDataManager.swift in Sources */,
 				84C04AF92C8A628F00225B58 /* MetadataValidatable.swift in Sources */,
 				84298F3C2C8223B300C5CEF9 /* BackupManager.swift in Sources */,
@@ -1043,26 +1072,28 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84EAF68D2C824B1A0051A649 /* CryptoSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 84EAF68C2C824B1A0051A649 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
-			productName = CryptoSwift;
-		};
-		84EC7D932C87CADB00C50E01 /* Swinject */ = {
+		84F658CA2C8AAF7D00671EB1 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 84EC7D922C87CADB00C50E01 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
 		};
+		84F658CC2C8AAF8A00671EB1 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84EAF68C2C824B1A0051A649 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		84214F3E2C80174500DCEDBD /* journalApp.xcdatamodeld */ = {
+		846B60D72C8B86AE00C2C710 /* JournalAppModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				84214F3F2C80174500DCEDBD /* journalApp.xcdatamodel */,
+				84FED7832C8CEB3D0078A6CE /* JournalAppModelV2.xcdatamodel */,
+				846B60D82C8B86AE00C2C710 /* JournalAppModel.xcdatamodel */,
 			);
-			currentVersion = 84214F3F2C80174500DCEDBD /* journalApp.xcdatamodel */;
-			path = journalApp.xcdatamodeld;
+			currentVersion = 84FED7832C8CEB3D0078A6CE /* JournalAppModelV2.xcdatamodel */;
+			name = JournalAppModel.xcdatamodeld;
+			path = /Users/admin/Documents/projects/swift/GitJournalApp/development/journalApp/Data/JournalAppModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

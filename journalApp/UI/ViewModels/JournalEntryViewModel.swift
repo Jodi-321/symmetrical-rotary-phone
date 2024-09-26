@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 class JournalEntryViewModel {
     private let journalManager: JournalManagerProtocol
@@ -14,12 +15,19 @@ class JournalEntryViewModel {
         self.journalManager = journalManager
     }
     
-    func fetchAllEntries() -> [JournalEntry] {
-        return journalManager.fetchEntries()
+    // Fetch all entries with a completion handler
+    func fetchAllEntries(completion: @escaping (Result<[JournalEntry], JournalError>) -> Void){
+        journalManager.fetchEntries { result in
+            // Handle the restul if needed, then pass to the caller
+            completion(result)
+        }
     }
     
-    func addJournalEntry(content: String, moodRating: Int, metadata: [String: Any]? = nil) -> Result<JournalEntry, JournalError> {
-        //Pass these arguments to 'createEntry'
-        return journalManager.createEntry(content: content, moodRating: moodRating, metadata: metadata)
+    // Add a journal entry with a completion handler
+    func addJournalEntry(content: String, moodRating: Int, completion: @escaping (Result<JournalEntry, JournalError>) -> Void) {
+        journalManager.createEntry(content: content, moodRating: moodRating) { result in
+            // Handler the result if needed, then pass it to the caller
+            completion(result)
+        }
     }
 }

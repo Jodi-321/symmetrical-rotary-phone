@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 protocol JournalRepository {
     func create(entry: JournalEntry) throws

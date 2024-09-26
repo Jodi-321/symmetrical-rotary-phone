@@ -9,12 +9,20 @@ import SwiftUI
 
 @main
 struct journalAppApp: App {
-    let persistenceController = PersistenceController.shared
+    //Integrate the AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    init() {
+        // Init CoreDataStack early in the app lifecycle
+        let _ = CoreDataStack.shared
+    }
+    
+    let persistenceController = CoreDataStack.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, persistenceController.mainContext)
         }
     }
 }

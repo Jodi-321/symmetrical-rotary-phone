@@ -5,6 +5,7 @@
 //  Created by admin on 9/5/24.
 //
 
+/*
 import Foundation
 
 
@@ -32,6 +33,7 @@ protocol MetadataValidatable {
     func validate(metadata: [String: Any]) throws
 }
  */
+
 
 // Class to validate metadata against the allowed keys and types
 class MetadataValidator: MetadataValidatable {
@@ -65,3 +67,5 @@ class MetadataValidator: MetadataValidatable {
         //Custom vaidation logic will go here. 
     }
 }
+
+*/

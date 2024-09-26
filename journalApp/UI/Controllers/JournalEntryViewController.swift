@@ -8,48 +8,62 @@
 import Foundation
 import UIKit
 
-class JournalEntryViewController: UIViewController {
-    private var viewModel: JournalEntryViewModel
+class JournalEntryViewController: UIViewController, UITableViewDataSource {
+    private let viewModel = JournalEntryViewModel(journalManager: DIContainer.shared.resolve(JournalManagerProtocol.self)!)
+    private var entries: [JournalEntry] = []
     
-    //Custom init that takes a ViewModel
-    init(viewModel: JournalEntryViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    //Required init for using Storyboards - Xcode
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //fetch journal entries and update UI
+        tableView.dataSource = self
         fetchAndDisplayEntries()
     }
     
-    @IBAction func addEntryButtonTapped(_ sender: UIButton) {
-        addNewEntry()
-    }
-    
     private func fetchAndDisplayEntries() {
-        let entries = viewModel.fetchAllEntries()
-        
-        //Update UI with fetched entries
-        // Example: use a tableView or collectionView to display entries
-        print(entries) //Placeholder: replce with actual UI code to display entries
+        viewModel.fetchAllEntries {[weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let entries):
+                    self?.entries = entries
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print("Failed to fetch entries: \(error.localizedDescription)")
+                    // Present an alert to the user coming here ********
+                }
+            }
+        }
     }
     
     private func addNewEntry() {
-        let result = viewModel.addJournalEntry(content: "New Entry", moodRating: 4)
-        switch result {
-        case .success(let entry):
-            print("Entry added: \(entry)")
-            
-            //refresh UI or update the list with the new entry
-        case .failure(let error):
-            print("Failed to add entry: \(error)")
+        viewModel.addJournalEntry(content: "New Entry", moodRating: 4) {[weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let entry):
+                    print("Entry added: \(entry)")
+                    self?.entries.append(entry)
+                    self?.tableView.reloadData()
+                case .failure(let error):
+                    print("Failed to add entry: \(error.localizedDescription)")
+                    // Will add user alert here *******
+                }
+            }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return entries.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "JournalEntryCell", for: indexPath)
+        let entry = entries[indexPath.row]
+        if let contentData = entry.content,
+           let contentString = String(data: contentData, encoding: .utf8) {
+            cell.textLabel?.text = contentString
+        } else {
+            cell.textLabel?.text = "No Content"
+        }
+        return cell
     }
 }

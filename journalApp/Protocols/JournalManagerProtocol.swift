@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import CoreData
 
 protocol JournalManagerProtocol {
-    func createEntry(content: String, moodRating: Int, metadata: [String: Any]?) -> Result<JournalEntry, JournalError>
-    func fetchEntries() -> [JournalEntry]
-    func updateEntry(entry: JournalEntry, updatedContent: String, updatedMoodRating: Int, updatedMetadata: [String: Any]?) -> Result<Bool, JournalError>
-    func deleteEntry(entry: JournalEntry) -> Result<Bool, JournalError>
+    func createEntry(content: String, moodRating: Int, completion: @escaping (Result<JournalEntry, JournalError>) -> Void)
+    func fetchEntries(completion: @escaping (Result<[JournalEntry], JournalError>) -> Void)
+    func updateEntry(entry: JournalEntry, updatedContent: String, updatedMoodRating: Int, completion: @escaping (Result<Bool, JournalError>) -> Void)
+    func deleteEntry(entry: JournalEntry, completion: @escaping (Result<Bool, JournalError>) -> Void)
 }

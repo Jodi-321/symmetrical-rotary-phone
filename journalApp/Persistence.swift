@@ -5,17 +5,18 @@
 //  Created by admin on 8/28/24.
 //
 
+/*
 import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
 
     static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true)
+        let result = PersistenceController(inMemory: false)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            //let newItem = Item(context: viewContext)
+            //newItem.timestamp = Date()
         }
         do {
             try viewContext.save()
@@ -31,7 +32,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "journalApp")
+        container = NSPersistentContainer(name: "JournalAppModel")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -54,3 +55,5 @@ struct PersistenceController {
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
+
+*/

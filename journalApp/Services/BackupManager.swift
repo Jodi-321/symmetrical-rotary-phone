@@ -14,7 +14,7 @@ class BackupManager: BackupManagerProtocol {
     
     //create backup of journal entries
     func createBackup() -> Result<Bool, BackupError> {
-        let entries = CoreDataManager.shared.fetchAllEntries()
+        let entries = CoreDataStack.shared.fetchAllEntries()
         
         // Convert JournalEntry objects to JournalEntryData
         let entriesData = entries.map { JournalEntryData(from: $0) }
@@ -36,8 +36,8 @@ class BackupManager: BackupManagerProtocol {
             let jsonData = try Data(contentsOf: backupURL)
             let restoredEntriesData = try JSONDecoder().decode([JournalEntryData].self, from: jsonData)
             
-            let restoredEntries = restoredEntriesData.map { $0.toJournalEntry(context: CoreDataManager.shared.context)}
-            CoreDataManager.shared.save(entries: restoredEntries)
+            let restoredEntries = restoredEntriesData.map { $0.toJournalEntry(context: CoreDataStack.shared.mainContext)}
+            CoreDataStack.shared.save(entries: restoredEntries)
             
             return .success(true)
         } catch {

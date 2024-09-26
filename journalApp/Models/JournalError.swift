@@ -12,6 +12,7 @@ enum JournalError: Error, Equatable {
     case dataIntegrityError(String) // Error related to data integrity issues
     case entryNotFound //When a specific jounral entry is not found
     case unknownError(String) // General or unknown errors
+    case coreDataError(String)
     
     var localizedDescription: String {
         switch self {
@@ -21,6 +22,8 @@ enum JournalError: Error, Equatable {
             return "Data Integrity Error: \(message)"
         case .entryNotFound:
             return "The requested journal entry was not found."
+        case .coreDataError(let message):
+            return "Core Data Error: \(message)"
         case .unknownError(let message):
             return "Unknown Error: \(message)"
         }

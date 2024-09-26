@@ -5,7 +5,9 @@
 //  Created by admin on 8/30/24.
 //
 
+/*
 import Foundation
+import CoreData
 
 class MoodTrackingManager: MoodTrackingManagerProtocol {
     func analyzeMood(entries: [JournalEntry]) -> MoodAnalysisResult {
@@ -21,3 +23,5 @@ class MoodTrackingManager: MoodTrackingManagerProtocol {
         return MoodAnalysisResult(averageMood: averageMood, moodCounts: moodCounts)
     }
 }
+
+*/

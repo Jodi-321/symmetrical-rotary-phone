@@ -14,12 +14,17 @@ class KeychainManager: KeychainManagerProtocol {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrAccount as String: keyName,
-            kSecValueData as String: key
+            kSecValueData as String: key,
+            kSecAttrAccessible as String: kSecAttrAccessibleWhenUnlockedThisDeviceOnly
         ]
-        SecItemDelete(query as CFDictionary) //delete any existing item
+        
+        // Delete any existing item
+        SecItemDelete(query as CFDictionary)
+        
+        // Add new key to the keychain
         let status = SecItemAdd(query as CFDictionary, nil)
-        if status != errSecSuccess {
-            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to store key in keychain."])
+        guard status == errSecSuccess else {
+            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to store key in keychain. Status code:\(status)"])
         }
     }
     
@@ -32,12 +37,23 @@ class KeychainManager: KeychainManagerProtocol {
             kSecReturnData as String: true,
             kSecMatchLimit as String: kSecMatchLimitOne
         ]
+        
         var item: CFTypeRef?
         let status = SecItemCopyMatching(query as CFDictionary, &item)
-        if status != errSecSuccess {
-            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to retrieve key from Keychain."])
+        
+        if status == errSecSuccess {
+            if let data = item as? Data {
+                return data
+            } else {
+                throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to retrieve key from Keychain."])
+            }
+        } else if status == errSecItemNotFound {
+            //Key not found in keychain
+            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Key not found in keychain. Status code: \(status)"])
+        } else {
+            // Other keychain errors
+            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to retrieve ey from keychain. Status code: \(status)"])
         }
-        return (item as! Data)
     }
     
     //Delete key from keychain
@@ -47,9 +63,10 @@ class KeychainManager: KeychainManagerProtocol {
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrAccount as String: keyName
         ]
+        
         let status = SecItemDelete(query as CFDictionary)
-        if status != errSecSuccess {
-            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to delete key from keychain."])
+        if status != errSecSuccess && status != errSecItemNotFound {
+            throw NSError(domain: "KeychainError", code: Int(status), userInfo: [NSLocalizedDescriptionKey: "Failed to delete key from keychain. Status code: \(status)"])
         }
     }
 }
