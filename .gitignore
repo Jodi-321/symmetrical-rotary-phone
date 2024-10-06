@@ -64,4 +64,4 @@ DerivedData/
 # Test outputs
 *.coverage
 test-output/
-journalApp/Tests/
+developing/journalApp/Tests/
