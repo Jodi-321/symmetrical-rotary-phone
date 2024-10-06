@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct SecurityQuestion: Codable {
+    let question: String
+    let answerHash: String
+}

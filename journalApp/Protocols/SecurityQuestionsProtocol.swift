@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol SecurityQuestionsProtocol {
+    func getSecurityQuestions() -> [String]
+}

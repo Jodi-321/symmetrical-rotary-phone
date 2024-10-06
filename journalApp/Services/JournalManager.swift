@@ -30,13 +30,7 @@ class JournalManager: JournalManagerProtocol {
                 completion(.failure(.dataIntegrityError("Content cannot be empty.")))
                 return
             }
-            
-            /*
-             // Convert content to Data and valdate
-             guard !content.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
-             return .failure(.dataIntegrityError("Content cannot be empty."))
-             }
-             */
+
             
             //validate moodRating
             guard (1...5).contains(moodRating) else {

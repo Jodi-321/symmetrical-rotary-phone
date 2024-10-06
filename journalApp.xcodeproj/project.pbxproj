@@ -45,6 +45,13 @@
 		849A1C742C89346B00F4BB81 /* MetadataValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A1C722C8926C500F4BB81 /* MetadataValidatorTests.swift */; };
 		849A1C752C89347100F4BB81 /* MetadataKeyRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A1C702C89239D00F4BB81 /* MetadataKeyRegistryTests.swift */; };
 		849A1C762C89347400F4BB81 /* JournalEntryValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A1C6E2C891A6100F4BB81 /* JournalEntryValidationTests.swift */; };
+		84AE87E22CB1EDC300B5D430 /* setPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87E12CB1EDC300B5D430 /* setPinView.swift */; };
+		84AE87E42CB2129500B5D430 /* PINView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87E32CB2129500B5D430 /* PINView.swift */; };
+		84AE87E62CB2EFAB00B5D430 /* SecurityQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87E52CB2EFAB00B5D430 /* SecurityQuestion.swift */; };
+		84AE87E82CB2EFC200B5D430 /* SecurityQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87E72CB2EFC200B5D430 /* SecurityQuestionView.swift */; };
+		84AE87EA2CB3019C00B5D430 /* SecurityQuestionVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87E92CB3019C00B5D430 /* SecurityQuestionVerificationView.swift */; };
+		84AE87EC2CB302C000B5D430 /* SecurityQuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87EB2CB302C000B5D430 /* SecurityQuestionManager.swift */; };
+		84AE87EE2CB3031700B5D430 /* SecurityQuestionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE87ED2CB3031700B5D430 /* SecurityQuestionsProtocol.swift */; };
 		84C04AF02C8A522300225B58 /* MetadataKeyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AEF2C8A522300225B58 /* MetadataKeyRegistry.swift */; };
 		84C04AF22C8A523100225B58 /* MetadataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AF12C8A523100225B58 /* MetadataValidator.swift */; };
 		84C04AF52C8A5FA300225B58 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C04AF42C8A5FA300225B58 /* Validatable.swift */; };
@@ -140,6 +147,13 @@
 		849A1C6E2C891A6100F4BB81 /* JournalEntryValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryValidationTests.swift; sourceTree = "<group>"; };
 		849A1C702C89239D00F4BB81 /* MetadataKeyRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataKeyRegistryTests.swift; sourceTree = "<group>"; };
 		849A1C722C8926C500F4BB81 /* MetadataValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataValidatorTests.swift; sourceTree = "<group>"; };
+		84AE87E12CB1EDC300B5D430 /* setPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setPinView.swift; sourceTree = "<group>"; };
+		84AE87E32CB2129500B5D430 /* PINView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINView.swift; sourceTree = "<group>"; };
+		84AE87E52CB2EFAB00B5D430 /* SecurityQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityQuestion.swift; sourceTree = "<group>"; };
+		84AE87E72CB2EFC200B5D430 /* SecurityQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityQuestionView.swift; sourceTree = "<group>"; };
+		84AE87E92CB3019C00B5D430 /* SecurityQuestionVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityQuestionVerificationView.swift; sourceTree = "<group>"; };
+		84AE87EB2CB302C000B5D430 /* SecurityQuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityQuestionManager.swift; sourceTree = "<group>"; };
+		84AE87ED2CB3031700B5D430 /* SecurityQuestionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityQuestionsProtocol.swift; sourceTree = "<group>"; };
 		84B764712C81474C00F07B16 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Sources; path = ../../../../Sources; sourceTree = "<group>"; };
 		84B7648C2C815C3600F07B16 /* AnalyticsManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyticsManagerProtocol.swift; path = ../../../../../../Protocols/AnalyticsManagerProtocol.swift; sourceTree = "<group>"; };
 		84B7648D2C815C3600F07B16 /* MoodTrackingManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoodTrackingManagerProtocol.swift; path = ../../../../../../Protocols/MoodTrackingManagerProtocol.swift; sourceTree = "<group>"; };
@@ -283,6 +297,7 @@
 				84298F3F2C8237BA00C5CEF9 /* EncryptionKeyProviderProtocol.swift */,
 				84C04AF62C8A622800225B58 /* Persistable.swift */,
 				84C04AF82C8A628F00225B58 /* MetadataValidatable.swift */,
+				84AE87ED2CB3031700B5D430 /* SecurityQuestionsProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -301,6 +316,7 @@
 				84298F3D2C82264000C5CEF9 /* MoodTrackingManager.swift */,
 				84298F412C82380F00C5CEF9 /* EncryptionKeyProvider.swift */,
 				847CB5BD2CA5CCC800C3C92C /* EncryptionDebugHelper.swift */,
+				84AE87EB2CB302C000B5D430 /* SecurityQuestionManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -326,6 +342,10 @@
 			children = (
 				84FED7872C8CF78D0078A6CE /* ContentView.swift */,
 				84FED7892C8CFD2B0078A6CE /* AddEntryView.swift */,
+				84AE87E12CB1EDC300B5D430 /* setPinView.swift */,
+				84AE87E32CB2129500B5D430 /* PINView.swift */,
+				84AE87E72CB2EFC200B5D430 /* SecurityQuestionView.swift */,
+				84AE87E92CB3019C00B5D430 /* SecurityQuestionVerificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +366,7 @@
 				84EAF6952C824BE80051A649 /* JournalError.swift */,
 				84EAF6972C824DFF0051A649 /* BackupError.swift */,
 				84EF3EA52C8251EE00803076 /* MoodAnalysisResult.swift */,
+				84AE87E52CB2EFAB00B5D430 /* SecurityQuestion.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -675,6 +696,7 @@
 				84C04AFE2C8A761F00225B58 /* JournalRepository.swift in Sources */,
 				84FED78E2C8D1F910078A6CE /* FetchedResultsControllerDelegate.swift in Sources */,
 				84FED78A2C8CFD2B0078A6CE /* AddEntryView.swift in Sources */,
+				84AE87E22CB1EDC300B5D430 /* setPinView.swift in Sources */,
 				84EAF6962C824BE80051A649 /* JournalError.swift in Sources */,
 				84298F1D2C820DB800C5CEF9 /* BackupManagerProtocol.swift in Sources */,
 				847A30342C92404200DBB25C /* DataMigrationManager.swift in Sources */,
@@ -685,6 +707,7 @@
 				84298F1F2C820DB800C5CEF9 /* KeychainManagerProtocol.swift in Sources */,
 				84298F352C8211C700C5CEF9 /* JournalEntryViewModel.swift in Sources */,
 				8488C52E2C825BB600ADB11B /* JournalEntryData.swift in Sources */,
+				84AE87EC2CB302C000B5D430 /* SecurityQuestionManager.swift in Sources */,
 				84214F3D2C80174500DCEDBD /* Persistence.swift in Sources */,
 				84EF3EA62C8251EE00803076 /* MoodAnalysisResult.swift in Sources */,
 				84298F272C820DE100C5CEF9 /* AuthenticationManager.swift in Sources */,
@@ -695,19 +718,24 @@
 				84EAF6982C824DFF0051A649 /* BackupError.swift in Sources */,
 				84FED7852C8CEF060078A6CE /* JournalEntry+CustomMethods.swift in Sources */,
 				84FED7882C8CF78D0078A6CE /* ContentView.swift in Sources */,
+				84AE87E62CB2EFAB00B5D430 /* SecurityQuestion.swift in Sources */,
 				84298F1C2C820DB800C5CEF9 /* AuthenticationManagerProtocol.swift in Sources */,
 				84FED78C2C8D01E90078A6CE /* CoreDataStack.swift in Sources */,
 				84C04AF52C8A5FA300225B58 /* Validatable.swift in Sources */,
 				84298F202C820DB800C5CEF9 /* MoodTrackingManagerProtocol.swift in Sources */,
+				84AE87EA2CB3019C00B5D430 /* SecurityQuestionVerificationView.swift in Sources */,
+				84AE87EE2CB3031700B5D430 /* SecurityQuestionsProtocol.swift in Sources */,
 				84298F382C8212ED00C5CEF9 /* JournalEntryViewController.swift in Sources */,
 				84298F282C820DE100C5CEF9 /* JournalManager.swift in Sources */,
 				84298F3A2C8222FB00C5CEF9 /* AnalyticsManager.swift in Sources */,
 				84298F1B2C820DB800C5CEF9 /* AnalyticsManagerProtocol.swift in Sources */,
 				84298F422C82380F00C5CEF9 /* EncryptionKeyProvider.swift in Sources */,
+				84AE87E42CB2129500B5D430 /* PINView.swift in Sources */,
 				84298F402C8237BA00C5CEF9 /* EncryptionKeyProviderProtocol.swift in Sources */,
 				8488C52C2C82540600ADB11B /* CoreDataManager.swift in Sources */,
 				84C04AF92C8A628F00225B58 /* MetadataValidatable.swift in Sources */,
 				84298F3C2C8223B300C5CEF9 /* BackupManager.swift in Sources */,
+				84AE87E82CB2EFC200B5D430 /* SecurityQuestionView.swift in Sources */,
 				84C04AF22C8A523100225B58 /* MetadataValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
