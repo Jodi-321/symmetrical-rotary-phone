@@ -1,6 +1,6 @@
 # JournalApp: Security Features Overview
 
-**JournalApp** is designed with a strong emphasis on security and privacy, ensuring that all user data is protected with industry-standard practices. This document outlines the core security implementations, showcasing how the app ensures that user information, particularly journal entries, is safeguarded from unauthorized access. The app uses robust encryption, secure key management, and PIN-based authentication, with additional security measures for PIN recovery through security questions.
+**JournalApp** is designed with a strong emphasis on security and privacy, ensuring that all user data is protected with industry-standard practices. This document outlines the core security implementations, showcasing how the app ensures that user information, particularly journal entries, is safeguarded from unauthorized access. The app uses robust encryption, secure key management, and PIN-based authentication, with additional security measures for PIN recovery through security questions. The information provided below are for demonstration purposes only. **This app is not currently designed for use in production.**
 
 ---
 
