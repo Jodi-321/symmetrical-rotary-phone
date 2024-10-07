@@ -23,6 +23,9 @@ JournalApp is developed with the following core objectives in mind:
 - **PIN-Based Authentication**: Access to the app's content is restricted by a secure PIN, which is hashed and stored safely using the iOS Keychain.
 - **Security Questions**: Users can set security questions to recover their PIN in case they forget it, further enhancing data protection.
 
+For more detailed information on security features, [read the full security overview](./securityReadme.md).
+
+
 ### 2. Modular Architecture
 JournalApp uses a **Model-View-ViewModel (MVVM)** and **Model-View-Controller (MVC)** hybrid architecture. This modular approach ensures that each feature of the app is self-contained, enabling easy scalability and maintainability.
 
